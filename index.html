@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit Card API</title>
+	<script src="es5scripts/script.js" defer></script>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body id="main">
+
+<h1>CREDIT CARD API</h1>
+
+<h3>Информация о Вашей банковской карте:</h3>
+<div>
+    <p>
+        <label for="amount">Сумма: </label>
+        <input id="amount" type="text" placeholder="В рублях">
+		<span id="amountValid" class="valid"></span>
+		<span id="amountError" class="error"></span>
+    </p>
+
+    <p>
+        <label for="name">Имя владельца: </label>
+        <input id="name" type="text" placeholder="IVAN IVANOV">
+		<span id="nameValid" class="valid"></span>
+		<span id="nameError" class="error"></span>
+    </p>
+
+    <p>
+        <label for="cardNumber">Credit card number: </label>
+        <input id="cardNumber" type="text" placeholder="16 цифр">
+		<span id="cardNumberValid" class="valid"></span>
+		<span id="cardNumberError" class="error"></span>
+    </p>
+
+    <p>
+        <label for="expiryDate">Срок действия: </label>
+        <input id="expiryDate" type="text" placeholder="0923">
+		<span id="expiryDateValid" class="valid"></span>
+		<span id="expiryDateError" class="error"></span>
+    </p>
+
+    <p>
+        <label for="cvv">CVV: </label>
+        <input id="cvv" type="text" placeholder="3 цифры на обороте">
+		<span id="cvvValid" class="valid"></span>
+		<span id="cvvError" class="error"></span>
+    </p>
+
+    <p>
+        <button id="submit">Отправить</button>
+    </p>
+</div>
+
+</body>
+</html>
